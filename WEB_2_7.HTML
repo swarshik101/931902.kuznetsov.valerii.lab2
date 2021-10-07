@@ -1,0 +1,79 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Task 2.7</title>
+  <style>
+  * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  }
+  body {
+  padding: 10px;
+  }
+  div {
+  color: white;
+  width: 150px;
+  height: 100px;
+  }
+  .static {
+  background: blueviolet;
+  position: static;
+  }
+  .rel1 {
+  position: relative;
+  background: darkred;
+  }
+  .rel2 {
+  position: relative;
+  background: peru;
+  top: -40px;
+  left: 40px;
+  }
+  .rel3 {
+  position: relative;
+  background:indianred;
+  width: 600px;
+  height: 450px;
+  }
+  .absolute {
+  position: absolute;
+  background: indigo;
+  width: 300px;
+  right: 0;
+  bottom: 150px;
+  }
+  .fixed {
+  position: fixed;
+  z-index: -1;
+  background: forestgreen;
+  bottom: 0;
+  right: 0;
+  }
+  </style>
+</head>
+<body>
+  <div class="static">
+    It's a static div!
+  </div>
+  <div class="rel1">
+    It's a relative div!
+  </div>
+  <div class="rel2">
+    It's a relative div!
+  </div>
+  <div class="rel3">
+    It's a relative div!
+    <div class="absolute">
+      It's an absolite div with relative parent!
+    </div>
+  </div>
+  <div class="fixed">
+    It's a fixed div!
+  </div>
+</body>
+</html>
